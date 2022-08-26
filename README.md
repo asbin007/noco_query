@@ -4,7 +4,7 @@
 ## Getting Started
 
 ```
-const noco = require('noco_query')
+const nocoQuery = require('noco_query')
 
 //for example
 const url = "http://localhost:8080/api/v1/db/data/noco/***"
