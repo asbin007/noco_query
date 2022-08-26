@@ -4,21 +4,21 @@
 ## Getting Started
 
 ```
-const noco = require('nocoQuery')
+const noco = require('noco_query')
 
 //for example
-const url = "http://localhost:8080/api/v1/db/data/noco/*"
+const url = "http://localhost:8080/api/v1/db/data/noco/***"
 const table = "users"
-const token = "................"
+const token = "*******"
 
-const db = new nocoQuery({host: host, table: table, xc_token: token});
+const db = new nocoQuery({host: url, table: table, xc_token: token});
 
 //for connecting to database
 db.connect();
 
 ```
 
-![Connecting](./snapshot/connect.png)
+![Connecting](https://raw.githubusercontent.com/Avrel3/noco_query/main/snapshot/connect.png)
 
 
 ### For getting data
@@ -29,7 +29,7 @@ db.get(query, (data) => console.log(data))
 
 ```
 
-![Get](./snapshot/get.png)
+![Get](https://raw.githubusercontent.com/Avrel3/noco_query/main/snapshot/get.png)
 
 
 ### For posting data
@@ -43,7 +43,7 @@ db.post({
 
 ```
 
-![Post](./snapshot/post.png)
+![Post](https://raw.githubusercontent.com/Avrel3/noco_query/main/snapshot/post.png)
 
 
 ### Lacks (for now)
