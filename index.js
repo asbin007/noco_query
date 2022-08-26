@@ -34,12 +34,15 @@ class nocoQuery {
           });
     }
 
-    get(query, data = () => {} ) {
+    get(query, data = () => {}, limit) {
+        var url = `${this.host}/${this.table}/views/${this.table}?w=${query}`;
         if(typeof data != "function"){
             log("Pass a proper callback function for the response".red)
             return;
         }
-        var url = `${this.host}/${this.table}/views/${this.table}?w=${query}`;
+        if(typeof limit == "number"){
+            url = `${this.host}/${this.table}/views/${this.table}?limit=${limit}&w=${query}`;
+        }
         const options = {
             headers: {
                 "Accept": "*/*",
