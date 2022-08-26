@@ -16,7 +16,7 @@
     "database"
   ],
   "author": "avrel3",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
     "colors": "^1.4.0"
