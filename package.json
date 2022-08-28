@@ -3,6 +3,10 @@
   "version": "0.9.7",
   "description": "Query support for open source nocodb database",
   "main": "index.js",
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/Avrel3/noco_query.git"
+  },
   "scripts": {
     "test": "node ."
   },
