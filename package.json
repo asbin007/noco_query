@@ -1,6 +1,6 @@
 {
   "name": "noco_query",
-  "version": "0.9.7",
+  "version": "1.2.3",
   "description": "Query support for open source nocodb database",
   "main": "index.js",
    "repository": {
