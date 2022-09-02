@@ -1,19 +1,20 @@
 {
   "name": "noco_query",
-  "version": "0.9.7",
+  "version": "1.0.6",
   "description": "Query support for open source nocodb database",
   "main": "index.js",
-  "scripts": {
-    "test": "node ."
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Avrel3/noco_query.git"
   },
   "keywords": [
     "nocodb",
-    "noco",
-    "db",
-    "nocoQuery",
-    "noco_query",
+    "opensource",
+    "backend",
+    "database",
     "query",
-    "database"
+    "nocoQuery",
+    "noco_query"
   ],
   "author": "avrel3",
   "license": "ISC",
