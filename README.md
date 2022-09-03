@@ -50,7 +50,7 @@ db.post(body);
 ```
 const query = "w=(username,eq,hinata_hyuga)";
 
-db.get(query, (data) => console.log(data))
+db.find(query, (data) => console.log(data))
 ```
 
 ### Update data
