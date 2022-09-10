@@ -16,12 +16,10 @@ class nocoQuery {
       url: url,
       method: method,
       headers: {
-        Accept: "*/*",
         "Content-Type": "application/json",
         "xc-token": this.xc_token,
       },
     };
-
     axios
       .request(options)
       .then((res) => {
@@ -40,7 +38,7 @@ class nocoQuery {
     }
     const options = {
       headers: {
-        Accept: "*/*",
+        
         "Content-Type": "application/json",
         "xc-token": this.xc_token,
       },
@@ -63,7 +61,7 @@ class nocoQuery {
     }
     const options = {
       headers: {
-        Accept: "*/*",
+        
         "Content-Type": "application/json",
         "xc-token": this.xc_token,
       },
@@ -90,7 +88,6 @@ class nocoQuery {
       url: url,
       method: "POST",
       headers: {
-        Accept: "*/*",
         "Content-Type": "application/json",
         "xc-token": this.xc_token,
       },
@@ -118,7 +115,6 @@ class nocoQuery {
         url: url,
         method: "PATCH",
         headers: {
-          Accept: "*/*",
           "Content-Type": "application/json",
           "xc-token": this.xc_token,
         },
@@ -146,7 +142,6 @@ class nocoQuery {
         url: url,
         method: "DELETE",
         headers: {
-          Accept: "*/*",
           "Content-Type": "application/json",
           "xc-token": this.xc_token,
         },
@@ -183,7 +178,6 @@ class nocoQuery {
           url: url + `/${Id}`,
           method: "DELETE",
           headers: {
-            Accept: "*/*",
             "Content-Type": "application/json",
             "xc-token": this.xc_token,
           },
