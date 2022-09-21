@@ -1,6 +1,6 @@
 {
   "name": "noco_query",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "homepage": "https://github.com/Avrel3/noco_query.git",
   "description": "Query support for open source nocodb database",
   "main": "index.js",
