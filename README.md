@@ -2,18 +2,19 @@
 
 ## Getting Started
 
-```
-const nocoQuery = require('noco_query');
+```javascript
+const nocoQuery = require("noco_query");
 
 const config = {
-    url: "http://localhost:8080/api/v1/db/data/noco/hdwh_wbidnw",
-    table: "users",
-    xc_token: "*******",
-}
+  url: "http://localhost:8080/api/v1/db/data/noco/hdwh_wbidnw",
+  table: "users",
+  xc_token: "*******",
+};
 
-const noco = new nocoQuery(config);
+const db = new nocoQuery(config);
 
-//checking the connection to database // !(mandatory)
+//checking the connection to database // not mandatory
+
 db.connect();
 ```
 
@@ -21,24 +22,25 @@ db.connect();
 
 ### Get data
 
-```
+```javascript
 // Note: "" || invalid query => returns every data;
-// Full documentation of queries can be found in official Nocodb website // i.e const query = "w=(<key>,eq,<value>)"
+// Full documentation of queries can be found in official Nocodb website
+// i.e const query = "w=(<key>,eq,<value>)"
 
 const query = "";
 
-db.get(query, (data) => console.log(data))
+db.get(query, (data) => console.log(data));
 ```
 
 ![Get](https://raw.githubusercontent.com/Avrel3/noco_query/main/snapshot/get.png)
 
 ### Post data
 
-```
+```javascript
 const body = {
-    username: "hinata_hyuga",
-    password: "naruto-kun"
-}
+  username: "<username>",
+  password: "<password>",
+};
 
 db.post(body);
 ```
@@ -47,34 +49,34 @@ db.post(body);
 
 ### Find data
 
-```
-const query = "w=(username,eq,hinata_hyuga)";
+```javascript
+const query = "w=(username,eq,<username>)";
 
-db.find(query, (data) => console.log(data))
+db.find(query, (data) => console.log(data));
 ```
 
 ### Update data
 
-```
-const query = "w=(username,eq,hinata_hyuga)"
+```javascript
+const query = "w=(username,eq,<user>)";
 const body = {
-    username: "hinata_uzumaki"
-}
+  username: "<user>",
+};
 
 db.update(query, body);
 ```
 
 ### Delete data
 
-```
-const query = "w=(username,eq,hinata_uzumaki)"
+```javascript
+const query = "w=(username,eq,<user>)";
 
 db.delete(query);
 ```
 
 ### Destroy data
 
-```
+```javascript
 //Note: Deletes all rows in the table
 
 db.destroy();
